@@ -19,8 +19,8 @@ client.on('message', message => {
     const args = cont.join(' ');
 
     if (message.content.startsWith(prefix+'bigdick')){
-        rand_num = randomInt(0, 100)
-        message.channel.send(message.author.username + ' es '+ rand_num + '% Big Dick.'); 
+        rand_num = randomInt(0, 100);
+        message.channel.send('LEAN TODOS!!! ' + message.author.username + ' es '+ rand_num + '% Big Dick.'); 
     }
 });
 
