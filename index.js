@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const randomInt = require('random-int');
 
 client.on('ready', () => {
-    client.user.setActivity('Iniciando Bot Main', {type: 'WATCHING'});
+    client.user.setActivity('A Todos!!!', {type: 'WATCHING'});
     console.log('Listo!');
 });
 
