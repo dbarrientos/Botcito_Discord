@@ -22,7 +22,7 @@ client.on('message', message => {
     if (message.content.startsWith(prefix+'bigdick')){
         rand_num = randomInt(0, 100);
         rand_arr = frases_arr[randomInt(0, (frases_arr.length - 1))];
-        message.reply(rand_arr + 'un' + rand_num + '% Big Dick.')
+        message.reply(rand_arr + 'un ' + rand_num + '% Big Dick.')
           .then(sent => console.log(`Sent a reply to ${sent.author.username}`))
           .catch(console.error);
     }
