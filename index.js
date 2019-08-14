@@ -17,20 +17,20 @@ client.on('message', message => {
     
     const cont = message.content.split(' ').slice(1);
     const args = cont.join(' ');
-    const frases_arr = ['Quien lo diría, eres ', 'Vaya sorpresa, eres ', 'Guau! Eres ', 'Baia Baia, eres ', 'Pero que... eres ']
+    const frases_arr = ['Quien lo diría, eres ', 'Vaya sorpresa, eres ', 'Guau! Eres ', 'Baia Baia, eres ', 'Pero que... eres ', 'Esto debe estar descalibrado... eres ']
 
     if (message.content.startsWith(prefix+'bigdick')){
         rand_num = randomInt(0, 100);
         rand_arr = frases_arr[randomInt(0, (frases_arr.length - 1))];
-        if (message.author.username == "ZeroCool"){
-          message.reply('Eres el mejor de los mejores. El más Big Dick de todos. Tu eres un 1000% Big Dick.')
-            .then(sent => console.log(`Sent a reply to ${sent.author.username}`))
-            .catch(console.error);
-        }else{
-          message.reply(rand_arr + 'un ' + rand_num + '% Big Dick.')
-            .then(sent => console.log(`Sent a reply to ${sent.author.username}`))
-            .catch(console.error);
-        }
+        // if (message.author.username == "ZeroCool"){
+        //   message.reply('Eres el mejor de los mejores. El más Big Dick de todos. Tu eres un 1000% Big Dick.')
+        //     .then(sent => console.log(`Sent a reply to ${sent.author.username}`))
+        //     .catch(console.error);
+        // }else{
+        message.reply(rand_arr + 'un ' + rand_num + '% Big Dick.')
+          .then(sent => console.log(`Sent a reply to ${sent.author.username}`))
+          .catch(console.error);
+        // }
     }
 });
 
