@@ -20,7 +20,10 @@ client.on('message', message => {
 
     if (message.content.startsWith(prefix+'bigdick')){
         rand_num = randomInt(0, 100);
-        message.channel.send('LEAN TODOS!!! ' + message.author.username + ' es '+ rand_num + '% Big Dick.'); 
+        // message.channel.send('LEAN TODOS!!! ' + message.author.username + ' es '+ rand_num + '% Big Dick.'); 
+        message.reply('LEAN TODOS!!! @' + message.author.username + ' es '+ rand_num + '% Big Dick.')
+          .then(sent => console.log(`Sent a reply to ${sent.author.username}`))
+          .catch(console.error);
     }
 });
 
