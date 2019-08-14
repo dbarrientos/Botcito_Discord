@@ -1,0 +1,23 @@
+{
+  "name": "botcito_test",
+  "version": "1.0.0",
+  "description": "Proyecto de bot para discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbarrientos/Botcito_Discord.git"
+  },
+  "author": "z3r0_c0oL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbarrientos/Botcito_Discord/issues"
+  },
+  "homepage": "https://github.com/dbarrientos/Botcito_Discord#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "random-int": "^2.0.0"
+  }
+}
