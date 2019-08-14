@@ -17,11 +17,12 @@ client.on('message', message => {
     
     const cont = message.content.split(' ').slice(1);
     const args = cont.join(' ');
+    const frases_arr = ['Quien lo diría, eres ', 'Vaya sorpresa, eres', 'Guau! Eres ', 'Baia Baia, eres ', 'Pero que... eres ']
 
     if (message.content.startsWith(prefix+'bigdick')){
         rand_num = randomInt(0, 100);
-        // message.channel.send('LEAN TODOS!!! ' + message.author.username + ' es '+ rand_num + '% Big Dick.'); 
-        message.reply('LEAN TODOS!!! @' + message.author.username + ' es '+ rand_num + '% Big Dick.')
+        rand_arr = frases_arr[randomInt(0, (frases_arr.length - 1))];
+        message.reply(rand_arr + 'un' + rand_num + '% Big Dick.')
           .then(sent => console.log(`Sent a reply to ${sent.author.username}`))
           .catch(console.error);
     }
