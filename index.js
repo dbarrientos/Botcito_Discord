@@ -17,7 +17,7 @@ client.on('message', message => {
     
     const cont = message.content.split(' ').slice(1);
     const args = cont.join(' ');
-    const frases_arr = ['Quien lo diría, eres ', 'Vaya sorpresa, eres', 'Guau! Eres ', 'Baia Baia, eres ', 'Pero que... eres ']
+    const frases_arr = ['Quien lo diría, eres ', 'Vaya sorpresa, eres ', 'Guau! Eres ', 'Baia Baia, eres ', 'Pero que... eres ']
 
     if (message.content.startsWith(prefix+'bigdick')){
         rand_num = randomInt(0, 100);
